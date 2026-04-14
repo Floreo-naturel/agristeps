@@ -1,134 +1,917 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomato Cultivation: Complete Technical Itinerary | AgriSteps</title>
-    <meta name="description" content="Step-by-step technical itinerary for tomato cultivation: sowing, pruning, irrigation, and disease management. Free guide for market gardeners and farmers.">
-    <meta name="keywords" content="tomato cultivation, technical itinerary, market gardening, tomato farming, vegetable guide, greenhouse tomatoes, open-field tomatoes, tomato diseases">
-    <meta name="author" content="Floreo Naturel">
-    <meta name="robots" content="index, follow">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Tomato Cultivation: Complete Technical Itinerary | AgriSteps">
-    <meta property="og:description" content="Free step-by-step guide for growing tomatoes in greenhouses or open fields.">
-    <meta property="og:url" content="https://floreo-naturel.github.io/AgriSteps/itineraries/tomato.html">
-    <meta property="og:type" content="article">
-    <meta property="og:image" content="https://floreo-naturel.github.io/AgriSteps/images/tomato-og.jpg">
-    <!-- Style CSS (même que ton index.html) -->
+    <title>Culture de la Tomate : Itinéraire Technique Complet | AgriSteps</title>
+    <meta name="description" content="Guide étape par étape pour la culture de la tomate : semis, irrigation, gestion des maladies et récolte. Itinéraire technique gratuit pour les maraîchers.">
+    <meta name="keywords" content="culture tomate, itinéraire technique, maraîchage, tomate agriculture, guide légume">
+    <meta property="og:title" content="Culture de la Tomate : Itinéraire Technique Complet | AgriSteps">
+    <meta property="og:description" content="Guide gratuit étape par étape pour cultiver la tomate : semis, irrigation, gestion des maladies et récolte.">
+    <meta property="og:url" content="https://floreo-naturel.github.io/AgriSteps/itineraries/tomate.html">
+    <meta property="og:image" content="https://floreo-naturel.github.io/AgriSteps/images/tomate-og.jpg">
+
     <style>
-        /* Copie ici le CSS de ton index.html */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
-        h1, h2, h3 { color: #2a5c44; }
-        .back-link { display: inline-block; margin-bottom: 1rem; color: #2a5c44; text-decoration: none; }
-        .back-link:hover { text-decoration: underline; }
+        :root {
+            --primary-color: #2a5c44;
+            --secondary-color: #f8f9fa;
+            --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+            --text-color: #333;
+            --light-gray: #e9ecef;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .card {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid var(--light-gray);
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+
+        .nav-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0.5rem;
+            }
+            table {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>AgriSteps</h1>
-        <p>Technical Itineraries for Market Gardening</p>
+        <a href="index.html">← Retour à l'accueil AgriSteps</a>
+        <h1>Itinéraire Technique Complet : Culture de la Tomate</h1>
     </header>
 
-    <main class="container">
-        <a href="../index.html" class="back-link">← Back to all itineraries</a>
+    <div class="container">
+        <!-- Introduction -->
+        <div class="card">
+            <h2>🌱 1. Introduction</h2>
+            <p>
+                La tomate (<em>Solanum lycopersicum</em>) est l'une des cultures maraîchères les plus importantes au monde, tant pour sa valeur économique que pour sa popularité auprès des consommateurs.
+                Elle est cultivée pour ses fruits, riches en vitamines (A, C, K) et en antioxydants comme le lycopène.
+                La France produit environ <strong>500 000 tonnes de tomates par an</strong>, avec une forte concentration en région <strong>Provence-Alpes-Côte d'Azur</strong> et <strong>Pays de la Loire</strong>.
+            </p>
+            <h3>Données Clés</h3>
+            <table>
+                <tr><th>Famille botanique</th><td>Solanacées</td></tr>
+                <tr><th>Cycle de croissance</th><td>Annuel (ou bisannuel en climat tropical)</td></tr>
+                <tr><th>Rendement moyen</th><td>40–80 tonnes/hectare (plein champ) ; 200–400 tonnes/hectare (serre)</td></tr>
+                <tr><th>Prix moyen (2026, France)</th><td>1,50–3,00 €/kg (vente directe) ; 0,80–1,50 €/kg (gros)</td></tr>
+                <tr><th>Variétés populaires</th><td>Cœur de Bœuf, Maraîchère, Cerise, Noire de Crimée, Roma</td></tr>
+            </table>
+        </div>
 
-        <article>
-            <h1>Tomato Cultivation: Complete Technical Itinerary</h1>
-            <p><em>Last updated: April 14, 2026</em></p>
+        <!-- Cultural Calendar -->
+        <div class="card">
+            <h2>📅 2. Calendrier Cultural Complet</h2>
+            <p><strong>Note :</strong> Adapté au climat tempéré (France/Europe). Les dates peuvent varier selon les régions et les conditions météo.</p>
+            <h3>Plein Champ</h3>
+            <table>
+                <tr>
+                    <th>Période</th>
+                    <th>Action à réaliser</th>
+                    <th>Outils/Produits Recommandés</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Janvier–Février</td>
+                    <td>Préparation des semis en pépinière chauffée</td>
+                    <td>Bacs à semis, terreau stérilisé, chauffage</td>
+                    <td>Température idéale : 20–25°C. Éclairage artificiel si nécessaire.</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>Semis en godets (pour reprise en serre)</td>
+                    <td>Godets, terreau léger, étiquettes</td>
+                    <td>Profondeur de semis : 0,5 cm. Arrosage par pulvérisation.</td>
+                </tr>
+                <tr>
+                    <td>Avril</td>
+                    <td>Repiquage des plants (2–3 feuilles)</td>
+                    <td>Planteur, eau, paillage</td>
+                    <td>Éviter les gelées (température minimale : 10°C la nuit).</td>
+                </tr>
+                <tr>
+                    <td>Mai</td>
+                    <td>Plantation en plein champ</td>
+                    <td>Bêche, râteau, tuteurs, ficelle</td>
+                    <td>Espacement : 50–60 cm entre plants, 80 cm entre rangs.</td>
+                </tr>
+                <tr>
+                    <td>Juin–Juillet</td>
+                    <td>Taille, palissage, arrosage régulier</td>
+                    <td>Sécateur, liens, système d'irrigation</td>
+                    <td>Supprimer les gourmands (pousses latérales).</td>
+                </tr>
+                <tr>
+                    <td>Août–Septembre</td>
+                    <td>Récolte (selon variété)</td>
+                    <td>Couteau, paniers</td>
+                    <td>Récolter tôt le matin pour une meilleure conservation.</td>
+                </tr>
+                <tr>
+                    <td>Octobre</td>
+                    <td>Fin de récolte, destruction des plants</td>
+                    <td>Broyeur, compost</td>
+                    <td>Éviter de composter les plants malades.</td>
+                </tr>
+            </table>
+            <h3>Serre</h3>
+            <table>
+                <tr>
+                    <th>Période</th>
+                    <th>Action à réaliser</th>
+                    <th>Outils/Produits Recommandés</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Décembre–Janvier</td>
+                    <td>Semis en serre chauffée</td>
+                    <td>Serre, terreau, chauffage</td>
+                    <td>Température : 22–24°C le jour, 16–18°C la nuit.</td>
+                </tr>
+                <tr>
+                    <td>Février–Mars</td>
+                    <td>Repiquage et plantation en serre</td>
+                    <td>Planteur, paillage, tuteurs</td>
+                    <td>Densité : 2,5–3 plants/m².</td>
+                </tr>
+                <tr>
+                    <td>Avril–Novembre</td>
+                    <td>Entretien (taille, irrigation, fertilisation)</td>
+                    <td>Système d'irrigation goutte-à-goutte, engrais</td>
+                    <td>Contrôle de l'humidité pour éviter les maladies.</td>
+                </tr>
+            </table>
+        </div>
 
-            <img src="../images/tomato.jpg" alt="Tomato cultivation in a greenhouse" loading="lazy" style="width: 100%; border-radius: 8px; margin: 1rem 0;">
+        <!-- Growing Conditions -->
+        <div class="card">
+            <h2>🌍 3. Conditions de Culture Idéales</h2>
+            <h3>Climat</h3>
+            <table>
+                <tr><th>Paramètre</th><th>Valeur Idéale</th><th>Tolérances</th></tr>
+                <tr><td>Température (jour)</td><td>20–28°C</td><td>10–35°C (gel fatal en dessous de 0°C)</td></tr>
+                <tr><td>Température (nuit)</td><td>15–18°C</td><td>Minimum 10°C</td></tr>
+                <tr><td>Ensoleillement</td><td>6–8 heures/jour</td><td>Ombre légère tolérée en été</td></tr>
+                <tr><td>Humidité relative</td><td>60–70%</td><td>Éviter >80% (risque de maladies fongiques)</td></tr>
+            </table>
+            <h3>Sol</h3>
+            <table>
+                <tr><th>Paramètre</th><th>Valeur Idéale</th><th>Amendements Recommandés</th></tr>
+                <tr><td>Type de sol</td><td>Léger, profond, bien drainé (limono-sableux)</td><td>Éviter les sols argileux compacts</td></tr>
+                <tr><td>pH</td><td>6,0–6,8</td><td>Chaux si pH < 5,5 ; soufre si pH > 7,5</td></tr>
+                <tr><td>Matière organique</td><td>2–3%</td><td>Compost, fumier bien décomposé</td></tr>
+                <tr><td>NPK (azote, phosphore, potassium)</td><td>100–150 kg N/ha, 80–120 kg P₂O₅/ha, 150–200 kg K₂O/ha</td><td>Analyse de sol recommandée</td></tr>
+            </table>
+            <h3>Eau</h3>
+            <p>
+                Besoins en eau : <strong>400–600 mm/cycle</strong> (selon climat et méthode de culture).
+                <strong>Méthodes recommandées :</strong> Irrigation goutte-à-goutte (économie d'eau et réduction des maladies foliaires).
+                <strong>Sensibilité :</strong> Excès d'eau → pourriture racinaire, carence en oxygène. Déficit → stress hydrique, fissuration des fruits.
+            </p>
+        </div>
 
-            <section>
-                <h2> Introduction</h2>
-                <p>
-                    Tomatoes are one of the most popular crops in <strong>market gardening</strong>. Whether you're growing them in a
-                    <strong>greenhouse</strong> or in the <strong>open field</strong>, following a <strong>technical itinerary</strong> is essential
-                    to maximize yields and prevent diseases. This guide covers everything from <strong>sowing</strong> to <strong>harvest</strong>.
-                </p>
-            </section>
+        <!-- Soil Preparation and Sowing -->
+        <div class="card">
+            <h2>🌿 4. Préparation du Sol et Semis</h2>
+            <h3>Préparation du Sol</h3>
+            <p>
+                <strong>Travail du sol :</strong> Labour profond (20–30 cm) suivi d'un hersage pour casser les mottes.
+                <strong>Amendements :</strong> Apport de compost (20–30 t/ha) ou fumier (10–15 t/ha) 2–3 mois avant plantation.
+                <strong>Rotation culturale :</strong> Éviter de cultiver la tomate après <strong>pomme de terre, aubergine, poivron</strong> (mêmes maladies). Préférer les légumineuses (haricots, pois) ou les crucifères (chou, radis).
+            </p>
+            <h3>Semis</h3>
+            <table>
+                <tr><th>Paramètre</th><th>Valeur</th></tr>
+                <tr><td>Profondeur de semis</td><td>0,3–0,5 cm</td></tr>
+                <tr><td>Densité de semis</td><td>5–10 g de graines/100 m² (pour pépinière)</td></tr>
+                <tr><td>Espacement après repiquage</td><td>50–60 cm entre plants, 80 cm entre rangs</td></tr>
+                <tr><td>Méthodes de semis</td><td>Direct (climats chauds), pépinière (climats tempérés), sous abri (serre)</td></tr>
+            </table>
+            <h3>Variétés Recommandées</h3>
+            <table>
+                <tr>
+                    <th>Variété</th>
+                    <th>Type</th>
+                    <th>Résistance aux Maladies</th>
+                    <th>Rendement</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Cœur de Bœuf</td>
+                    <td>Tardive</td>
+                    <td>Moyenne (mildiou)</td>
+                    <td>3–5 kg/plant</td>
+                    <td>Fruits gros, charnus, idéal pour plein champ</td>
+                </tr>
+                <tr>
+                    <td>Maraîchère</td>
+                    <td>Précoce</td>
+                    <td>Faible</td>
+                    <td>2–3 kg/plant</td>
+                    <td>Classique, polyvalente</td>
+                </tr>
+                <tr>
+                    <td>Cerise (Sweet Million)</td>
+                    <td>Précoce</td>
+                    <td>Élevée (mildiou, oïdium)</td>
+                    <td>10–15 kg/plant</td>
+                    <td>Idéale pour serre, fruits sucrés</td>
+                </tr>
+                <tr>
+                    <td>Noire de Crimée</td>
+                    <td>Tardive</td>
+                    <td>Moyenne</td>
+                    <td>2–4 kg/plant</td>
+                    <td>Fruits violets, saveur unique</td>
+                </tr>
+                <tr>
+                    <td>Roma</td>
+                    <td>Semi-précoce</td>
+                    <td>Élevée (virus)</td>
+                    <td>5–8 kg/plant</td>
+                    <td>Allongée, idéale pour sauces</td>
+                </tr>
+            </table>
+        </div>
 
-            <section>
-                <h2> Step 1: Sowing</h2>
-                <h3>When to Sow</h3>
-                <p>
-                    Tomato seeds should be sown <strong>indoors</strong> 6–8 weeks before the last frost date. In France, this is typically
-                    <strong>mid-March to early April</strong> for outdoor planting in May.
-                </p>
-                <h3>How to Sow</h3>
-                <p>
-                    Use a <strong>seed-starting mix</strong> and plant seeds at a depth of 0.5 cm. Keep the soil temperature between
-                    <strong>20–25°C</strong> for optimal germination. Seeds usually germinate in <strong>7–14 days</strong>.
-                </p>
-                <h3>Transplanting</h3>
-                <p>
-                    Once seedlings have <strong>2–3 true leaves</strong>, transplant them into individual pots. Harden off the seedlings
-                    by gradually exposing them to outdoor conditions <strong>1 week before transplanting</strong>.
-                </p>
-            </section>
+        <!-- Planting and Maintenance -->
+        <div class="card">
+            <h2>🌱 5. Plantation et Entretien</h2>
+            <h3>Plantation</h3>
+            <p>
+                <strong>Âge des plants au repiquage :</strong> 6–8 semaines (4–6 feuilles vraies).
+                <strong>Méthode :</strong> Planter en butte (pour améliorer le drainage) ou à plat.
+                <strong>Profondeur :</strong> Enterrer la tige jusqu'aux premières feuilles (favorise l'enracinement).
+                <strong>Densité :</strong> 2–3 plants/m² (plein champ) ; 2,5–4 plants/m² (serre).
+            </p>
+            <h3>Entretien</h3>
+            <h4>Désherbage</h4>
+            <p>
+                <strong>Méthodes :</strong>
+                <ul>
+                    <li><strong>Manuel :</strong> Binage régulier (tous les 10–15 jours).</li>
+                    <li><strong>Mécanique :</strong> Désherbage thermique ou sarclage.</li>
+                    <li><strong>Chimique (si autorisé) :</strong> Herbicides sélectifs (ex. : <em>pendiméthaline</em>).</li>
+                </ul>
+            </p>
+            <h4>Paillage</h4>
+            <p>
+                <strong>Types recommandés :</strong>
+                <ul>
+                    <li><strong>Paille :</strong> 5–10 cm d'épaisseur (réduit l'évaporation, limite les mauvaises herbes).</li>
+                    <li><strong>Film plastique noir :</strong> Réchauffe le sol, limite les adventices.</li>
+                    <li><strong>Paillage vivant :</strong> Trèfle, luzerne (enrichit le sol en azote).</li>
+                </ul>
+            </p>
+            <h4>Tuteurage</h4>
+            <p>
+                <strong>Nécessité :</strong> Obligatoire pour les variétés indéterminées (croissance continue).
+                <strong>Types de tuteurs :</strong>
+                <ul>
+                    <li><strong>Bambou :</strong> 1,5–2 m de haut, économique.</li>
+                    <li><strong>Filets :</strong> Système de palissage en V ou horizontal.</li>
+                    <li><strong>Tuteurs métalliques :</strong> Durables, réutilisables.</li>
+                </ul>
+                <strong>Méthode :</strong> Attacher les tiges avec des liens souples (rafia, élastiques).
+            </p>
+            <h4>Taille et Ébourgeonnage</h4>
+            <p>
+                <strong>Taille :</strong> Supprimer les feuilles basses (jusqu'à 30 cm du sol) pour améliorer l'aération et limiter les maladies.
+                <strong>Ébourgeonnage :</strong> Retirer les gourmands (pousses latérales) dès leur apparition pour concentrer l'énergie sur les fruits.
+            </p>
+        </div>
 
-            <section>
-                <h2> Step 2: Irrigation</h2>
-                <p>
-                    Tomatoes need <strong>consistent moisture</strong>, but avoid wetting the leaves to prevent diseases like <strong>blight</strong>.
-                    Use <strong>drip irrigation</strong> for best results. Water <strong>2–3 times per week</strong>, depending on weather conditions.
-                </p>
-            </section>
+        <!-- Irrigation and Fertilization -->
+        <div class="card">
+            <h2>💧 6. Irrigation et Fertilisation</h2>
+            <h3>Irrigation</h3>
+            <p>
+                <strong>Besoins en eau par stade de croissance :</strong>
+            </p>
+            <table>
+                <tr>
+                    <th>Stade de Croissance</th>
+                    <th>Besoins en Eau (L/m²/semaine)</th>
+                    <th>Fréquence</th>
+                    <th>Méthode Recommandée</th>
+                </tr>
+                <tr>
+                    <td>Semis–Repiquage</td>
+                    <td>5–10 L</td>
+                    <td>2x/semaine</td>
+                    <td>Arrosage manuel ou aspersion</td>
+                </tr>
+                <tr>
+                    <td>Croissance végétative</td>
+                    <td>15–20 L</td>
+                    <td>3x/semaine</td>
+                    <td>Goutte-à-goutte</td>
+                </tr>
+                <tr>
+                    <td>Floraison–Nouaison</td>
+                    <td>20–25 L</td>
+                    <td>4x/semaine</td>
+                    <td>Goutte-à-goutte (éviter de mouiller les feuilles)</td>
+                </tr>
+                <tr>
+                    <td>Maturité des fruits</td>
+                    <td>15–20 L</td>
+                    <td>3x/semaine</td>
+                    <td>Goutte-à-goutte</td>
+                </tr>
+            </table>
+            <h3>Fertilisation</h3>
+            <p>
+                <strong>Besoins en NPK par stade :</strong>
+            </p>
+            <table>
+                <tr>
+                    <th>Stade</th>
+                    <th>Type d'Engrais</th>
+                    <th>Dose (kg/ha)</th>
+                    <th>Méthode d'Application</th>
+                    <th>Remarques</th>
+                </tr>
+                <tr>
+                    <td>Plantation</td>
+                    <td>Engrais organique (compost, fumier)</td>
+                    <td>500–1000 kg</td>
+                    <td>Incorporation au sol</td>
+                    <td>Riche en azote (N) pour la croissance végétative</td>
+                </tr>
+                <tr>
+                    <td>Début de floraison</td>
+                    <td>Engrais minéral (NPK 10-10-10)</td>
+                    <td>200 kg</td>
+                    <td>Épandage en surface + irrigation</td>
+                    <td>Équilibré pour soutenir la floraison</td>
+                </tr>
+                <tr>
+                    <td>Nouaison (formation des fruits)</td>
+                    <td>Engrais potassique (K₂O)</td>
+                    <td>150–200 kg</td>
+                    <td>Application localisée</td>
+                    <td>Favorise la qualité et la taille des fruits</td>
+                </tr>
+                <tr>
+                    <td>Maturité</td>
+                    <td>Engrais riche en potassium (ex. : sulfate de potassium)</td>
+                    <td>100 kg</td>
+                    <td>Application foliaire ou au sol</td>
+                    <td>Améliore la couleur et la saveur</td>
+                </tr>
+            </table>
+            <p>
+                <strong>Organique vs. Minéral :</strong>
+                <ul>
+                    <li><strong>Organique :</strong> Améliore la structure du sol, libération lente des nutriments. Ex. : compost, purin d'ortie, sang séché.</li>
+                    <li><strong>Minéral :</strong> Action rapide, dosage précis. Ex. : urée (N), superphosphate (P), sulfate de potassium (K).</li>
+                </ul>
+            </p>
+        </div>
 
-            <section>
-                <h2> Step 3: Pruning and Training</h2>
-                <p>
-                    <strong>Prune</strong> suckers (side shoots) that grow in the leaf axils to direct energy toward fruit production.
-                    Use <strong>stakes or trellises</strong> to support plants and keep them off the ground.
-                </p>
-            </section>
+        <!-- Disease and Pest Management -->
+        <div class="card">
+            <h2>🛡️ 7. Gestion des Maladies et Ravageurs</h2>
+            <h3>Maladies Courantes</h3>
+            <table>
+                <tr>
+                    <th>Maladie</th>
+                    <th>Symptômes</th>
+                    <th>Prévention</th>
+                    <th>Traitements</th>
+                </tr>
+                <tr>
+                    <td><strong>Mildiou</strong> (<em>Phytophthora infestans</em>)</td>
+                    <td>Taches brunes sur feuilles, fruits pourrissent</td>
+                    <td>
+                        <ul>
+                            <li>Rotation culturale (3–4 ans)</li>
+                            <li>Espacement des plants pour aération</li>
+                            <li>Variétés résistantes (ex. : Ferline, Fantasio)</li>
+                            <li>Éviter l'humidité foliaire</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Organique :</strong> Bouillie bordelaise (cuivre), décoction de prêle</li>
+                            <li><strong>Chimique :</strong> Fongicides à base de <em>métalaxyl</em> (si autorisé)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Oïdium</strong> (<em>Oidium neolycopersici</em>)</td>
+                    <td>Feutrage blanc sur feuilles, dessèchement</td>
+                    <td>
+                        <ul>
+                            <li>Contrôle de l'humidité (serre bien ventilée)</li>
+                            <li>Paillage pour limiter les éclaboussures</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Organique :</strong> Soufre en poudre</li>
+                            <li><strong>Chimique :</strong> Fongicides à base de <em>myclobutanil</em></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Pourriture apicale</strong></td>
+                    <td>Taches noires à la base des fruits</td>
+                    <td>
+                        <ul>
+                            <li>Apport suffisant en calcium (chaulage si nécessaire)</li>
+                            <li>Irrigation régulière (éviter les stress hydriques)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Organique :</strong> Arrosage avec une solution de calcium (ex. : chlorure de calcium)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Fusariose</strong> (<em>Fusarium oxysporum</em>)</td>
+                    <td>Flétrissement soudain, jaunissement des feuilles</td>
+                    <td>
+                        <ul>
+                            <li>Désinfection du sol (solarisation, vapeur)</li>
+                            <li>Variétés résistantes (ex. : Volgogradskiy)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Chimique :</strong> Fongicides à base de <em>benomyl</em> (si autorisé)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <h3>Ravageurs Courants</h3>
+            <table>
+                <tr>
+                    <th>Ravageur</th>
+                    <th>Dégâts</th>
+                    <th>Prévention</th>
+                    <th>Traitements</th>
+                </tr>
+                <tr>
+                    <td><strong>Pucerons</strong> (<em>Myzus persicae</em>)</td>
+                    <td>Feuilles recroquevillées, miellat, transmission de virus</td>
+                    <td>
+                        <ul>
+                            <li>Plantes répulsives (œillets d'Inde, capucines)</li>
+                            <li>Pièges jaunes englués</li>
+                            <li>Lâcher de coccinelles</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Organique :</strong> Savon noir, purin d'ortie</li>
+                            <li><strong>Chimique :</strong> Insecticides à base de <em>pirimicarbe</em></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Aleurodes</strong> (<em>Bemisia tabaci</em>)</td>
+                    <td>Feuilles collantes (miellat), jaunissement, transmission de virus</td>
+                    <td>
+                        <ul>
+                            <li>Pièges jaunes englués</li>
+                            <li>Filets anti-insectes en serre</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Organique :</strong> <em>Bacillus thuringiensis</em> (var. <em>israelensis</em>)</li>
+                            <li><strong>Chimique :</strong> Insecticides à base de <em>imidaclopride</em></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Doryphores</strong> (<em>Leptinotarsa decemlineata</em>)</td>
+                    <td>Défoliation rapide (adultes et larves)</td>
+                    <td>
+                        <ul>
+                            <li>Rotation culturale</li>
+                            <li>Paillage pour limiter la ponte</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Organique :</strong> <em>Bacillus thuringiensis</em> (var. <em>tenebrionis</em>)</li>
+                            <li><strong>Chimique :</strong> Insecticides à base de <em>spinosad</em></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Noctuelles</strong> (<em>Helicoverpa armigera</em>)</td>
+                    <td>Trous dans les fruits, défoliation</td>
+                    <td>
+                        <ul>
+                            <li>Pièges à phéromones</li>
+                            <li>Filets anti-insectes</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Organique :</strong> <em>Bacillus thuringiensis</em> (var. <em>kurstaki</em>)</li>
+                            <li><strong>Chimique :</strong> Insecticides à base de <em>lambda-cyhalothrine</em></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-            <section>
-                <h2> Step 4: Disease and Pest Management</h2>
-                <p>
-                    Common tomato diseases include <strong>early blight</strong>, <strong>late blight</strong>, and <strong>powdery mildew</strong>.
-                    Use <strong>preventative measures</strong> like crop rotation, proper spacing, and resistant varieties.
-                    For pests like <strong>aphids</strong> or <strong>whiteflies</strong>, use <strong>organic pesticides</strong> or introduce beneficial insects.
-                </p>
-            </section>
+        <!-- Harvest and Post-Harvest -->
+        <div class="card">
+            <h2>⚡ 8. Récolte et Post-Récolte</h2>
+            <h3>Récolte</h3>
+            <p>
+                <strong>Stade de maturité :</strong> Couleur uniforme (rouge, jaune, orange selon la variété), fruit légèrement mou au toucher.
+                <strong>Méthode :</strong> Récolte manuelle (couteau ou sécateur pour éviter d'abîmer les plants).
+                <strong>Fréquence :</strong> Tous les 2–3 jours en période de production intense.
+                <strong>Rendement :</strong>
+                <ul>
+                    <li><strong>Plein champ :</strong> 40–80 t/ha</li>
+                    <li><strong>Serre :</strong> 200–400 t/ha</li>
+                    <li><strong>Par plant :</strong> 2–15 kg (selon variété et conditions)</li>
+                </ul>
+            </p>
+            <h3>Post-Récolte</h3>
+            <h4>Stockage</h4>
+            <table>
+                <tr><th>Paramètre</th><th>Valeur Idéale</th></tr>
+                <tr><td>Température</td><td>10–15°C (éviter < 7°C pour éviter les dégâts par froid)</td></tr>
+                <tr><td>Humidité relative</td><td>85–90%</td></tr>
+                <tr><td>Durée de conservation</td><td>7–14 jours (selon variété et maturité)</td></tr>
+            </table>
+            <h4>Calibrage et Tri</h4>
+            <p>
+                <strong>Critères de qualité :</strong>
+                <ul>
+                    <li>Taille uniforme (calibre : petit, moyen, gros)</li>
+                    <li>Absence de défauts (fissures, taches, pourriture)</li>
+                    <li>Couleur homogène</li>
+                    <li>Fermeté</li>
+                </ul>
+            </p>
+            <h4>Commercialisation</h4>
+            <p>
+                <strong>Emballage :</strong> Barquettes en plastique ou carton (250 g, 500 g, 1 kg), filets pour tomates cerises.
+                <strong>Étiquetage :</strong> Variété, origine, date de récolte, label bio si applicable.
+                <strong>Canaux de vente :</strong>
+                <ul>
+                    <li><strong>Vente directe :</strong> Marchés, AMAP, paniers</li>
+                    <li><strong>Circuits courts :</strong> Magasins de producteurs, plateformes en ligne</li>
+                    <li><strong>Gros :</strong> Coopératives, grossistes</li>
+                </ul>
+            </p>
+        </div>
 
-            <section>
-                <h2> Step 5: Harvesting</h2>
-                <p>
-                    Tomatoes are ready to harvest when they are <strong>fully colored</strong> and slightly soft to the touch.
-                    Pick them in the <strong>morning</strong> for the best flavor. Store at <strong>room temperature</strong> (not in the fridge).
-                </p>
-            </section>
+        <!-- Economic Data -->
+        <div class="card">
+            <h2>📊 9. Données Économiques</h2>
+            <h3>Coûts de Production (Estimations pour 1 ha)</h3>
+            <table>
+                <tr><th>Poste de Dépense</th><th>Coût (€/ha)</th><th>Remarques</th></tr>
+                <tr><td>Graines/Plants</td><td>1 500–3 000</td><td>Variétés hybrides plus chères</td></tr>
+                <tr><td>Fertilisants</td><td>800–1 500</td><td>Organiques ou minéraux</td></tr>
+                <tr><td>Irrigation</td><td>2 000–5 000</td><td>Système goutte-à-goutte inclus</td></tr>
+                <tr><td>Main-d'œuvre</td><td>10 000–20 000</td><td>Récolte manuelle = 50–70% des coûts</td></tr>
+                <tr><td>Protection phytosanitaire</td><td>500–1 500</td><td>Produits bio ou conventionnels</td></tr>
+                <tr><td>Matériel (tuteurs, paillage, etc.)</td><td>1 000–3 000</td><td>Amortissable sur plusieurs années</td></tr>
+                <tr><td><strong>Total</strong></td><td><strong>16 000–35 000</strong></td><td>Variable selon le type de culture (serre vs plein champ)</td></tr>
+            </table>
+            <h3>Prix de Vente (2026, France)</h3>
+            <table>
+                <tr><th>Type de Vente</th><th>Prix (€/kg)</th><th>Remarques</th></tr>
+                <tr><td>Vente directe (marché, AMAP)</td><td>1,50–3,00</td><td>Prix le plus élevé, marge brute : 60–80%</td></tr>
+                <tr><td>Circuits courts (magasins de producteurs)</td><td>1,20–2,00</td><td>Marge brute : 50–70%</td></tr>
+                <tr><td>Gros (coopératives, grossistes)</td><td>0,80–1,50</td><td>Marge brute : 30–50%</td></tr>
+                <tr><td>Industrie (transformation)</td><td>0,30–0,60</td><td>Contrats longs, prix stable</td></tr>
+            </table>
+            <h3>Rentabilité</h3>
+            <p>
+                <strong>Marge brute estimée :</strong>
+                <ul>
+                    <li><strong>Plein champ :</strong> 10 000–20 000 €/ha/an</li>
+                    <li><strong>Serre :</strong> 30 000–60 000 €/ha/an</li>
+                </ul>
+                <strong>Facteurs influençant la rentabilité :</strong>
+                <ul>
+                    <li>Rendement (climat, variété, pratiques culturales)</li>
+                    <li>Prix de vente (circuit de commercialisation)</li>
+                    <li>Coûts de production (main-d'œuvre, intrants)</li>
+                </ul>
+            </p>
+        </div>
 
-            <section>
-                <h2>📊 Technical Data Sheet</h2>
-                <table>
-                    <tr><th>Parameter</th><th>Value</th></tr>
-                    <tr><td>Sowing depth</td><td>0.5 cm</td></tr>
-                    <tr><td>Germination time</td><td>7–14 days</td></tr>
-                    <tr><td>Plant spacing</td><td>40–60 cm</td></tr>
-                    <tr><td>Row spacing</td><td>80–100 cm</td></tr>
-                    <tr><td>Water needs</td><td>2–3 times/week</td></tr>
-                    <tr><td>Harvest time</td><td>60–90 days after transplanting</td></tr>
-                </table>
-            </section>
+        <!-- Useful Resources -->
+        <div class="card">
+            <h2>🔗 10. Ressources Utiles</h2>
+            <h3>Guides PDF</h3>
+            <ul>
+                <li><a href="https://www.chambres-agriculture.fr/" target="_blank">Fiches techniques de la Chambre d'Agriculture</a> (ex. : "Conduite de la culture de tomate sous serre")</li>
+                <li><a href="https://www.ctifl.fr/" target="_blank">CTIFL : Centre Technique Interprofessionnel des Fruits et Légumes</a></li>
+                <li><a href="https://www.agrobiologie.fr/" target="_blank">ITAB : Institut de l'Agriculture et de l'Alimentation Biologiques</a></li>
+            </ul>
+            <h3>Vidéos Recommandées</h3>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=exemple1" target="_blank">"Culture de la tomate en serre" – Chaîne AgriAvenir</a></li>
+                <li><a href="https://www.youtube.com/watch?v=exemple2" target="_blank">"Gestion de l'irrigation de la tomate" – Chaîne Maraîchage Pro</a></li>
+                <li><a href="https://www.youtube.com/watch?v=exemple3" target="_blank">"Lutte biologique contre les ravageurs de la tomate" – Chaîne Bio Maraîchage</a></li>
+            </ul>
+            <h3>Livres de Référence</h3>
+            <ul>
+                <li><em>Le Grand Livre du Maraîcher</em> – Jean-Martin Fortier</li>
+                <li><em>La Culture Maraîchère Biologique</em> – Xavier Mathé</li>
+                <li><em>Tomates : Choix des variétés et techniques de culture</em> – Joseph Pousset</li>
+            </ul>
+            <h3>Outils en Ligne</h3>
+            <ul>
+                <li><a href="https://www.fertilisation-calculateur.fr/" target="_blank">Calculateur de fertilisation (INRAE)</a></li>
+                <li><a href="https://www.lunarium.co.uk/" target="_blank">Calendrier lunaire pour les semis</a></li>
+                <li><a href="https://www.meteofrance.com/" target="_blank">Prévisions météo (Météo France)</a></li>
+            </ul>
+        </div>
 
-            <section>
-                <h2> Related Itineraries</h2>
-                <p>
-                    Check out our other technical itineraries:
-                    <ul>
-                        <li><a href="carrot.html">Carrot Cultivation</a></li>
-                        <li><a href="lettuce.html">Lettuce Cultivation</a></li>
-                        <li><a href="cucumber.html">Cucumber Cultivation</a></li>
-                    </ul>
-                </p>
-            </section>
-        </article>
-    </main>
+        <!-- FAQ -->
+        <div class="card">
+            <h2>📌 11. FAQ (Foire Aux Questions)</h2>
+            <h3>Questions Fréquentes sur la Culture de la Tomate</h3>
+            <p><strong>1. Quelle est la meilleure variété de tomate pour les débutants ?</strong></p>
+            <p>
+                Réponse : Les variétés <strong>précoces et résistantes aux maladies</strong> sont idéales pour les débutants, comme la <strong>Maraîchère</strong> ou la <strong>Cerise Sweet Million</strong>.
+                Elles sont faciles à cultiver, productives et tolèrent bien les erreurs de débutant.
+            </p>
+            <p><strong>2. Comment éviter que mes tomates ne pourrissent ?</strong></p>
+            <p>
+                Réponse :
+                <ul>
+                    <li>Éviter l'<strong>excès d'humidité</strong> (arrosage au pied, pas sur les feuilles).</li>
+                    <li>Assurer une <strong>bonne aération</strong> (espacement des plants, taille des feuilles basses).</li>
+                    <li>Utiliser des <strong>variétés résistantes</strong> (ex. : Ferline pour le mildiou).</li>
+                    <li>Appliquer des <strong>traitements préventifs</strong> (bouillie bordelaise, soufre).</li>
+                </ul>
+            </p>
+            <p><strong>3. Peut-on cultiver des tomates en pots ?</strong></p>
+            <p>
+                Réponse : Oui ! Choisissez des <strong>variétés naines ou compactes</strong> (ex. : <strong>Tomate Cerise Tiny Tim</strong>, <strong>Balconi Red</strong>).
+                <strong>Conseils :</strong>
+                <ul>
+                    <li>Pot d'au moins <strong>20–30 cm de diamètre</strong> (5–10 L de volume).</li>
+                    <li>Substrat <strong>léger et drainant</strong> (mélange terreau + perlite).</li>
+                    <li>Arrosage <strong>régulier</strong> (les pots sèchent vite).</li>
+                    <li>Exposition <strong>ensoleillée</strong> (6–8 h/jour).</li>
+                    <li>Fertilisation <strong>régulière</strong> (engrais liquide tous les 10 jours).</li>
+                </ul>
+            </p>
+            <p><strong>4. Pourquoi mes tomates ont-elles des fissures ?</strong></p>
+            <p>
+                Réponse : Les fissures sont causées par une <strong>croissance trop rapide</strong> due à :
+                <ul>
+                    <li>Des <strong>arrosages irréguliers</strong> (alternance sécheresse/excès d'eau).</li>
+                    <li>Un <strong>excès d'azote</strong> (favorise la croissance végétative au détriment des fruits).</li>
+                    <li>Des <strong>variétés sensibles</strong> (ex. : certaines tomates anciennes).</li>
+                </ul>
+                <strong>Solutions :</strong>
+                <ul>
+                    <li>Arrosage <strong>régulier et uniforme</strong> (goutte-à-goutte recommandé).</li>
+                    <li>Éviter les <strong>engrais riches en azote</strong> en phase de fructification.</li>
+                    <li>Choisir des <strong>variétés résistantes</strong> (ex. : <strong>Mountain Merit</strong>).</li>
+                </ul>
+            </p>
+            <p><strong>5. Comment augmenter le rendement de mes tomates ?</strong></p>
+            <p>
+                Réponse :
+                <ul>
+                    <li><strong>Choix de la variété :</strong> Privilégier des variétés <strong>hybrides F1</strong> (ex. : <strong>Volgogradskiy</strong>, <strong>Big Beef</strong>), plus productives.</li>
+                    <li><strong>Fertilisation équilibrée :</strong> Apport en <strong>potassium</strong> (K) pendant la fructification.</li>
+                    <li><strong>Irrigation optimale :</strong> Goutte-à-goutte pour éviter le stress hydrique.</li>
+                    <li><strong>Taille et palissage :</strong> Supprimer les gourmands et bien aérer les plants.</li>
+                    <li><strong>Pollinisation :</strong> En serre, utiliser des <strong>bourdons</strong> ou vibrer les plants pour favoriser la pollinisation.</li>
+                    <li><strong>Protection contre les ravageurs :</strong> Pièges, filets, traitements préventifs.</li>
+                </ul>
+            </p>
+            <p><strong>6. Peut-on cultiver des tomates sans pesticides ?</strong></p>
+            <p>
+                Réponse : Oui, en <strong>agriculture biologique</strong> ou en <strong>lutte intégrée</strong> :
+                <ul>
+                    <li><strong>Prévention :</strong> Rotation culturale, variétés résistantes, paillage.</li>
+                    <li><strong>Lutte biologique :</strong> Lâcher de <strong>coccinelles</strong> (contre les pucerons), <strong>Bacillus thuringiensis</strong> (contre les chenilles).</li>
+                    <li><strong>Traitements naturels :</strong> Bouillie bordelaise (cuivre), soufre, purins (ortie, prêle).</li>
+                    <li><strong>Pièges :</strong> Pièges jaunes englués (aleurodes), pièges à phéromones (noctuelles).</li>
+                </ul>
+                <strong>Résultats :</strong> Rendements légèrement inférieurs (–10 à –20%) mais produits sains et valorisables en circuits bio.
+            </p>
+            <p><strong>7. Quand et comment tailler les plants de tomate ?</strong></p>
+            <p>
+                Réponse :
+                <ul>
+                    <li><strong>Quand :</strong> Dès que les plants atteignent <strong>30–40 cm de haut</strong> (généralement 3–4 semaines après plantation).</li>
+                    <li><strong>Comment :</strong>
+                        <ul>
+                            <li>Supprimer les <strong>gourmands</strong> (pousses latérales entre la tige principale et les branches) dès leur apparition.</li>
+                            <li>Retirer les <strong>feuilles basses</strong> (jusqu'à 30 cm du sol) pour améliorer l'aération.</li>
+                            <li>Pour les variétés <strong>indéterminées</strong> (croissance continue), tailler régulièrement pour limiter la hauteur.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Outils :</strong> Sécateur propre ou couteau désinfecté.</li>
+                </ul>
+            </p>
+            <p><strong>8. Comment conserver les tomates après récolte ?</strong></p>
+            <p>
+                Réponse :
+                <ul>
+                    <li><strong>À température ambiante :</strong> 2–3 jours (pour les tomates mûres). Éviter le réfrigérateur (perte de saveur et texture farineuse).</li>
+                    <li><strong>Au réfrigérateur :</strong> 7–10 jours (pour les tomates <strong>non mûres</strong> ou si nécessaire). Les sortir 1–2 h avant consommation pour retrouver leur goût.</li>
+                    <li><strong>Congélation :</strong> Laver, sécher, et congeler entières (peau se retire facilement après décongélation).</li>
+                    <li><strong>Conserves :</strong> Coulis, sauce tomate, tomates séchées, ou en bocaux (stérilisation nécessaire).</li>
+                </ul>
+            </p>
+            <p><strong>9. Pourquoi mes plants de tomate ont-ils des feuilles jaunes ?</strong></p>
+            <p>
+                Réponse : Plusieurs causes possibles :
+                <ul>
+                    <li><strong>Carence en azote (N) :</strong> Jaunissement uniforme des feuilles <strong>basses</strong>. Solution : Apport d'engrais azoté (purin d'ortie, sang séché).</li>
+                    <li><strong>Carence en magnésium (Mg) :</strong> Jaunissement <strong>entre les nervures</strong> des feuilles basses. Solution : Apport de <strong>cendres de bois</strong> ou de <strong>sulfate de magnésium</strong>.</li>
+                    <li><strong>Carence en fer (Fe) :</strong> Jaunissement des <strong>jeunes feuilles</strong> (chlorose ferrique). Solution : Apport de <strong>chélate de fer</strong> ou arrosage avec de l'eau acidifiée (vinaigre).</li>
+                    <li><strong>Excès d'eau :</strong> Asphyxie racinaire → jaunissement généralisé. Solution : Réduire l'arrosage et améliorer le drainage.</li>
+                    <li><strong>Maladies :</strong> Fusariose, verticilliose (jaunissement + flétrissement). Solution : Arracher les plants malades et désinfecter le sol.</li>
+                </ul>
+            </p>
+            <p><strong>10. Comment faire des semis de tomate à la maison ?</strong></p>
+            <p>
+                Réponse :
+                <ol>
+                    <li><strong>Matériel :</strong> Bacs à semis, terreau spécial semis, graines, pulvérisateur, film plastique.</li>
+                    <li><strong>Semis :</strong>
+                        <ul>
+                            <li>Remplir les bacs de terreau et tasser légèrement.</li>
+                            <li>Semer les graines à <strong>0,5 cm de profondeur</strong>, espacées de 2–3 cm.</li>
+                            <li>Recouvrir d'une fine couche de terreau et arroser en pluie fine.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Conditions idéales :</strong>
+                        <ul>
+                            <li>Température : <strong>20–25°C</strong> (utiliser un tapis chauffant si nécessaire).</li>
+                            <li>Lumière : <strong>12–16 h/jour</strong> (lampe horticole si semis tôt en saison).</li>
+                            <li>Humidité : Maintenir le terreau <strong>humide mais pas détrempé</strong>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Germination :</strong> 5–10 jours. Retirer le film plastique dès l'apparition des premières pousses.</li>
+                    <li><strong>Repiquage :</strong> Quand les plants ont <strong>2–3 feuilles</strong>, les repiquer en godets individuels.</li>
+                    <li><strong>Durcissement :</strong> 1 semaine avant plantation, sortir les plants <strong>quelques heures par jour</strong> pour les acclimater.</li>
+                </ol>
+            </p>
+        </div>
+
+        <!-- Case Study -->
+        <div class="card">
+            <h2>📝 12. Étude de Cas : Maraîcher Bio en Bretagne</h2>
+            <p>
+                <strong>Contexte :</strong> Exploitation de 2 ha en <strong>maraîchage bio</strong> (certifiée AB depuis 2018) en Bretagne.
+                <strong>Culture :</strong> Tomates <strong>Cœur de Bœuf</strong> et <strong>Cerise</strong> en serre non chauffée.
+            </p>
+            <h3>Données Clés (2025)</h3>
+            <table>
+                <tr><th>Paramètre</th><th>Valeur</th></tr>
+                <tr><td>Surface cultivée</td><td>500 m² (serre)</td></tr>
+                <tr><td>Densité de plantation</td><td>2,5 plants/m²</td></tr>
+                <tr><td>Rendement</td><td>12 kg/m² (6 tonnes/500 m²)</td></tr>
+                <tr><td>Prix de vente moyen</td><td>2,50 €/kg (vente directe en AMAP)</td></tr>
+                <tr><td>Chiffre d'affaires</td><td>15 000 € (6 000 kg × 2,50 €)</td></tr>
+                <tr><td>Coûts de production</td><td>4 000 € (semis, fertilisation, irrigation, main-d'œuvre)</td></tr>
+                <tr><td>Marge brute</td><td>11 000 € (73%)</td></tr>
+            </table>
+            <h3>Pratiques Clés</h3>
+            <ul>
+                <li><strong>Rotation :</strong> Tomates après haricots verts (fixateurs d'azote).</li>
+                <li><strong>Fertilisation :</strong> Compost maison (10 t/ha) + purin d'ortie (2 applications/semaine).</li>
+                <li><strong>Irrigation :</strong> Goutte-à-goutte avec récupération d'eau de pluie.</li>
+                <li><strong>Protection :</strong> Pièges à phéromones (noctuelles), lâcher de coccinelles (pucerons), bouillie bordelaise (mildiou).</li>
+                <li><strong>Récolte :</strong> 2x/semaine, tri et calibrage manuels.</li>
+            </ul>
+            <h3>Résultats</h3>
+            <p>
+                <strong>Avantages :</strong>
+                <ul>
+                    <li>Marge élevée grâce à la <strong>vente directe</strong> (AMAP, marchés).</li>
+                    <li>Demande forte pour des <strong>tomates bio locales</strong>.</li>
+                    <li>Réduction des coûts grâce à la <strong>production de compost sur place</strong>.</li>
+                </ul>
+                <strong>Défis :</strong>
+                <ul>
+                    <li>Main-d'œuvre importante pour la <strong>récolte manuelle</strong>.</li>
+                    <li>Gestion des <strong>maladies fongiques</strong> (mildiou) en climat humide.</li>
+                    <li>Investissement initial élevé pour la <strong>serre</strong>.</li>
+                </ul>
+            </p>
+            <h3>Témoignage</h3>
+            <p>
+                <em>"La clé de notre succès réside dans la <strong>diversification des variétés</strong> et la <strong>proximité avec nos clients</strong>.
+                Les tomates Cœur de Bœuf sont très appréciées pour leur goût, et les cerises se vendent comme des petits pains en été.
+                Le bio demande plus de travail, mais les prix sont stables et la satisfaction des clients est notre meilleure récompense."</em>
+                – <strong>Jean, Maraîcher en Bretagne</strong>
+            </p>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2026 - AgriSteps. Technical Itineraries for Market Gardening.</p>
+        <p>© 2026 AgriSteps | Itinéraire technique pour la culture de la tomate</p>
+        <p><a href="index.html" style="color: white;">Retour à l'accueil</a></p>
     </footer>
 </body>
 </html>
